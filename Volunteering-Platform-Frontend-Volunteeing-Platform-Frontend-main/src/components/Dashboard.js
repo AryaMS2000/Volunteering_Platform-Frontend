@@ -21,16 +21,16 @@ import Table1 from"./Table1";
 import Table2 from"./Table2";
 import Table3 from"./Table3";
 import EventsReg from "./EventsReg";
-import {
+// import {
 
-    XAxis,
-    YAxis,
-    CartesianGrid,
+//     XAxis,
+//     YAxis,
+//     CartesianGrid,
 
-    Legend,
-    Label,
-    LineChart,Line
-  } from "recharts";
+//     Legend,
+//     Label,
+//     LineChart,Line
+//   } from "recharts";
 
 
 const imgstyle = {
@@ -85,34 +85,34 @@ const imgstyle = {
 
       const dataInfo=JSON.parse(localStorage.getItem("myInfo"))
         const id=dataInfo.id
-        const [count,setCount]=useState(0);
+//         const [count,setCount]=useState(0);
 
-       useEffect(()=>{
+//        useEffect(()=>{
 
-        {
+//         {
 
-        axios.get(`http://localhost:8081/account/events/getEventParticipated/${id}`)
-       .then((response) => {
-         console.log(response.data.events);
-          var ct = response.data.eventsCount;
-          setCount(ct);
-        })
-      };
-    })
+//         axios.get(`http://localhost:8081/account/events/getEventParticipated/${id}`)
+//        .then((response) => {
+//          console.log(response.data.events);
+//           var ct = response.data.eventsCount;
+//           setCount(ct);
+//         })
+//       };
+//     })
 
 
     const classes = useStyles();
     const [value, setValue] = React.useState(0);
 
-    const [anchorEl, setAnchorEl] = React.useState(null);
+//     const [anchorEl, setAnchorEl] = React.useState(null);
 
-    const handleClick = (event) => {
-      setAnchorEl(event.currentTarget);
-    };
+//     const handleClick = (event) => {
+//       setAnchorEl(event.currentTarget);
+//     };
 
 
-    const handleClose = () => {
-      setAnchorEl(null);};
+//     const handleClose = () => {
+//       setAnchorEl(null);};
 
 
       let history = useHistory();
