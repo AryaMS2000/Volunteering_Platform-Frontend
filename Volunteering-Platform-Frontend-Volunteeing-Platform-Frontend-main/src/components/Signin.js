@@ -16,7 +16,7 @@ import background1 from './bg4.jpeg';
 const Login = ({ handleChange }) => {
 
     const paperStyle = { padding: '30px 20px', width: 300, margin: "30px auto" }
-    const headStyle = { margin: 0, fontFamily: 'san-serif', color: 'blue' }
+    //const headStyle = { margin: 0, fontFamily: 'san-serif', color: 'blue' }
     const gridStyle = { margin: '3px auto', padding: '5px auto' }
     const btnstyle = { margin: '8px 0', backgroundColor: '#F9261B' }
     const imgstyle = { height: 100, width: 180 }
