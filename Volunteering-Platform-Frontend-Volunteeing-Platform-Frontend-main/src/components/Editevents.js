@@ -61,13 +61,7 @@ const MenuProps = {
   },
 };
 const EditEvents = (props) => {
-  // const paperStyle = { padding: '10px 25px', height: 'auto', width: 'auto', margin: '20px 25px', border: ' black' }
-  // const gridStyle = { margin: 'auto auto', padding: 'auto auto' }
-  // const headStyle = { margin: '0', fontFamily: 'sans-serif', color: '#8A2BE2' }
-  // const btnStyle = { margin: '15px 15px' }
-  // const logoStyle = { height: 98, width: 128 }
-  // const iconStyle = {height:45, width:45}
-  // const dataEvent1=JSON.parse(localStorage.getItem("myEvent"))
+  
   const dataInfo1 = JSON.parse(localStorage.getItem("myEdit"))
   const marginTop = { marginTop: '10px', marginBottom: '8px', width: '100px' }
   const initialValues = {
@@ -96,8 +90,7 @@ const EditEvents = (props) => {
   };
   React.useEffect(() => {
     axios.get('http://localhost:8081/account/events/getEventsList/true/Weekend event')
-      //('http://localhost:8081/account/events/getEvents/'.concat('/isFutureEvent').concat('event'))
-      //(`http://localhost:8081/account/events/getEventsList/isFutureEvent${future}/eventTypes${event}`)
+     
       .then(response => {
         console.log(response)
         console.log(response.data[0].event_id)
@@ -160,10 +153,7 @@ const EditEvents = (props) => {
             mesg: "Saved Changes Successfully!"
           })
 
-          // history.push('/apphome');
-          // setSuccess(true);
-          // setMesg("Profile Updated!");
-          // setOpen(true);
+          
         }
 
       })
@@ -174,8 +164,7 @@ const EditEvents = (props) => {
             isOpen: true,
             mesg: "Something Went Wrong!"
           })
-          // setOpen(true);
-          // setMesg(error.response.data.message);
+          
 
 
         }
@@ -184,25 +173,14 @@ const EditEvents = (props) => {
             isOpen: true,
             mesg: "Something Went Wrong!"
           })
-          //    setOpen(true);
-          //     setMesg("Something went wrong");}
+          
           console.log(error)
         }
       });
   }
 
 
-  // const options = [
-  //     { value: 'weekendevents', label: 'Weekend Events' },
-  //     { value: 'webinarforNGOs', label: 'Webinar for NGOs' },
-  //     { value: 'foodforthought', label: 'Food for Thought' },
-  //     { value: 'artsandcraft', label: 'Arts & Craft' },
-  //   ];
-  //   const dataEvent=JSON.parse(localStorage.getItem("myEvent"))
-  // console.log(dataEvent)
-  // console.log(dataEvent[0].name)
-
-  // const classes = useStyles();
+  
 
   return (
 
@@ -221,30 +199,7 @@ const EditEvents = (props) => {
 
 
           <Grid  >
-            {/* <Paper style={paperStyle} elevation={2}> */}
-
-            {/* <Box ml={3} mb={3} mt={4}> */}
-            {/* <FormControl alignItems="center" variant="outlined" style={{ minWidth: 200, height: 80 }}>
-                <InputLabel id="demo-simple-select-outlined-label">Event Name</InputLabel>
-                <Select
-                  labelId="demo-simple-select-outlined-label"
-                  id="demo-event-name"
-                  label="Event Name"
-                  value={eventId}
-                  onChange={handleChange}
-
-                  MenuProps={MenuProps}
-                >
-                  {wevent.map((eve) => (
-                    <MenuItem key={eve.event_id} value={eve.event_id} >
-                      {eve.name}
-                    </MenuItem>
-                  ))}
-                </Select>
-                <FormHelperText>Find event by type</FormHelperText> */}
-            {/* <br />
-              </FormControl> */}
-            {/* </Box> */}
+            
             <Box>
               <Grid container style={{ width: '200' }} >
                 {/* {wevent.map((post)=>( */}
@@ -376,7 +331,7 @@ const EditEvents = (props) => {
                               </Form>
                             )}
                           </Formik>
-                        {/* </Grid> */}
+                        
                       </Grid>
 
                     {/* </CardContent>
