@@ -262,37 +262,9 @@ const Leader = () => {
             </Paper>
           </Grid>
 
-          {/* </Paper> */}
-          {/* <Card  className={classes.card}>
-              <CardContent>
-              </CardContent>
-            <CardActionArea onClick={()=>{history.push('/LeaderRR');}}>
+        
 
-                    <ListItem alignItems='center'>
-                      <ListItemIcon ><EmojiPeopleRoundedIcon /></ListItemIcon>
-                      <ListItemText>
-                      <Typography gutterBottom variant="h6" component="h1">
-                      Nominate Volunteers
-                    </Typography>
-                      </ListItemText>
-                    </ListItem> */}
-
-          {/* </CardActionArea>
-                  <CardActionArea onClick={()=>{history.push('/Certificates');}}>
-                  <CardContent>
-
-                    <ListItem alignItems='center'>
-                      <ListItemIcon ><CardGiftcardIcon /></ListItemIcon>
-                      <ListItemText>
-                      <Typography gutterBottom variant="h6" component="h1">
-                      Send Certificates
-                    </Typography>
-                      </ListItemText>
-                    </ListItem>
-
-                  </CardContent>
-                  </CardActionArea>
-            </Card> */}
+         
 
 
           <Grid container spacing={2} className={classes.grid}>
