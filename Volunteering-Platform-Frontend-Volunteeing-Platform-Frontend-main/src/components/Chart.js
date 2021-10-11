@@ -118,20 +118,20 @@ export default function Chart() {
   const classes = useStyles();
   const [count,setCount]=useState([])
 
-    let future=true
-    useEffect(()=>{
-        axios.get('http://localhost:8081/account/leader/userAnalyticsCounts')
-        .then(res=>{
-            console.log(res)
-            console.log(res.data)
-            // console.log(response.data.Users )
-            setCount(res.data)
-        })
-        .catch(err=>{
-            console.log(err)
+//     let future=true
+//     useEffect(()=>{
+//         axios.get('http://localhost:8081/account/leader/userAnalyticsCounts')
+//         .then(res=>{
+//             console.log(res)
+//             console.log(res.data)
+//             // console.log(response.data.Users )
+//             setCount(res.data)
+//         })
+//         .catch(err=>{
+//             console.log(err)
 
-        })
-    },[future]);
+//         })
+//     },[future]);
   return (
     <Box m={3}>
         <Homebar/>
